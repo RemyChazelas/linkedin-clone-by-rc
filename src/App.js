@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
-// import Feed from './components/Feed';
+import Feed from './components/Feed';
+import Widgets from './components/Widgets';
 import Login from './components/Login';
 import { useDispatch, useSelector } from 'react-redux';
 import { login, logout, selectUser } from './redux/userSlice';
 import { auth } from '../src/firebase_example';
-// import Widgets from './components/Widgets';
 import './styles/App.css';
 
 function App() {
@@ -36,7 +36,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="app">
 
       <Header />
 
@@ -45,8 +45,8 @@ function App() {
       ) : (
         <div className="app__body">
           <Sidebar />
-          {/* <Feed/>
-        <Widgets/> */}
+          <Feed />
+          <Widgets />
         </div>
       )}
 

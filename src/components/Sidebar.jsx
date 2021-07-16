@@ -41,10 +41,11 @@ function Sidebar() {
 
             <div className="sidebar__bottom">
                 <p>Recent</p>
-                {recentItem("ReactJS")}
-                {recentItem("NodeJS")}
-                {recentItem("Angular")}
-                {recentItem("MongoDB")}
+                {recentItem("reactjs")}
+                {recentItem("javascript")}
+                {recentItem("programming")}
+                {recentItem("developer")}
+                {recentItem("design")}
             </div>
 
         </div>
